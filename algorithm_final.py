@@ -103,7 +103,9 @@ for i in range(rounds):
     guesses = 0
     while guesses < total_guess - 1: 
     #for c in range(5):
-        position_letters = {0:"",1:"",2:"",3:"",4:""}
+        position_letters = {}
+        for i in range(word_length):
+            position_letters[i] = ""
         letters_position = {}
         temp_pos = []
         pos_index2 = 0
